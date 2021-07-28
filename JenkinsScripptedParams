@@ -1,3 +1,4 @@
+properties([parameters([booleanParam('TEST'), string('NODE')])])
 timestamps {
 node('master') {
     stage('Preparation') {
