@@ -3,6 +3,11 @@ timestamps {
 node('master') {
     stage('Preparation') {
         echo "This is Preparation"
+        echo "params.NODE"
+        echo "${NODE}"
+        echo "${params.NODE}"
+
+
     }
     stage('Build') {
          echo "This is Build"
