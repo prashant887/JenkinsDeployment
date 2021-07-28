@@ -19,7 +19,7 @@ timestamps {
               step {
                       echo "First" 
                       echo "params.DOCKER_TARGETS"
-                      echo "${params.DOCKER_TARGETS}
+                      echo "${params.DOCKER_TARGETS}"
                       echo "${DOCKER_TARGETS}"
               }
 
