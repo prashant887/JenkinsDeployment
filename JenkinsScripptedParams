@@ -11,7 +11,7 @@ node('master') {
     }
     stage('Build') {
          echo "This is Build"
-         if (params.TEST?.trim()) {
+         if (params.TEST) {
          
          echo "Testing to be done"
          
