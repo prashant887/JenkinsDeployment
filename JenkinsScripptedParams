@@ -1,17 +1,15 @@
-
-timestamps {    
-    node ('master') {
-    
-              stage('First') { 
-              
-              step {
-                      echo "First" 
-                      
-              }
-
-
-}
+timestamps {
+node('master') {
+    stage('Preparation') {
+        echo "This is Preparation"
     }
+    stage('Build') {
+         echo "This is Build"
+    }
+    stage('Results') {
+                 echo "This is Result"
 
+    }
+}
 
 }
