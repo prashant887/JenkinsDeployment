@@ -1,9 +1,4 @@
 
-import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
-import groovy.io.FileType
-
-
-
 timestamps {    
     node ('master') {
     
