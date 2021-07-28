@@ -12,13 +12,22 @@ agent { label 'master' }
             steps {
                 echo "Init" 
                 echo "$VERSION"
-                echo "params.VERSION"
+                echo "$params.VERSION"
+                echo "params.$VERSION"
+
             }
         }
         stage("build") {
             steps {
                 echo "Build"
                 echo "$DOCKER_TARGETS"
+            }
+        }
+        
+        stage("test") {
+            steps {
+                echo "Test"
+                echo "$executeTests"
             }
         }
        
