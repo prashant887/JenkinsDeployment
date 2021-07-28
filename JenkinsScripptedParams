@@ -6,6 +6,7 @@ node('master') {
         echo "acessing param dot node params.ENV"
         echo " acessing as dollar node ${ENV}"
         echo " accessing as dollar params dot node ${params.ENV}"
+        sh 'hostname'
 
 
     }
