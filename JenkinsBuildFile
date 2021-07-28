@@ -6,7 +6,7 @@ agent { label 'master' }
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                echo 'Build Param params.PARAM?  "${PARAM}"'
+                echo 'Build Param params.PARAM?  "${PARAM}".  ${params.PARAM}'
             }
         }
         stage('Buid') {
