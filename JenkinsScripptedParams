@@ -3,9 +3,9 @@ timestamps {
 node('master') {
     stage('Preparation') {
         echo "This is Preparation"
-        echo "acessing param dot node params.NODE"
-        echo " acessing as dollar node ${NODE}"
-        echo " accessing as dollar params dot node ${params.NODE}"
+        echo "acessing param dot node params.ENV"
+        echo " acessing as dollar node ${ENV}"
+        echo " accessing as dollar params dot node ${params.ENV}"
 
 
     }
