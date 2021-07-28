@@ -2,18 +2,7 @@
 import org.jenkinsci.plugins.pipeline.modeldefinition.Utils
 import groovy.io.FileType
 
-List list_params(){
-    def params_list = [
-    
-        stringParam(name: 'DOCKER_TARGETS', defaultValue: "", description: ' Space delimited list of Docker targets. Must have Dockerbuild.TARGET files in the same directory of the Dockerfile '),
-    ]
-    return params_list
-}
 
-properties([
-  parameters(list_params())
-])
- 
 
 timestamps {    
     node ('master') {
@@ -22,9 +11,7 @@ timestamps {
               
               step {
                       echo "First" 
-                      echo "params.DOCKER_TARGETS"
-                      echo "${params.DOCKER_TARGETS}"
-                      echo "${DOCKER_TARGETS}"
+                      
               }
 
 
