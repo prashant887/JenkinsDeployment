@@ -1,4 +1,4 @@
-properties([parameters([booleanParam('TEST'), string('DOCKER'), choice(choices: ['Test Dev Stage'], name: 'ENV')])])
+properties([parameters([booleanParam('TEST'), string('DOCKER'), choice(choices: ['Test','Dev', 'Stage'], name: 'ENV')])])
 timestamps {
 node('master') {
     stage('Preparation') {
