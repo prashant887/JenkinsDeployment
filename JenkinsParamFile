@@ -28,7 +28,7 @@ agent { label 'master' }
             steps {
                 echo "Test"
                 echo "$executeTests"
-                if ($executeTests) 
+                if (executeTests) 
                 {
                     echo "Test Executed"
                     sh 'hostname'
