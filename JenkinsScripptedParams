@@ -15,6 +15,7 @@ node('master') {
          if (params.TEST) {
          
          echo "Testing to be done"
+         sh '/Users/pl465j/execScript.sh ${DOCKER}'
          
          }
          else {
