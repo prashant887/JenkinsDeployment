@@ -21,6 +21,7 @@ agent { label 'master' }
             steps {
                 echo "Build"
                 echo "$DOCKER_TARGETS"
+                sh 'hostname'
             }
         }
         
@@ -28,6 +29,7 @@ agent { label 'master' }
             steps {
                 echo "Test"
                 echo "$executeTests"
+               script {
                 if (params.executeTests) {
                 
                     echo "Test Executed"
@@ -36,6 +38,7 @@ agent { label 'master' }
                else {
                     echo "No Test Executed"
                }
+            }
             }
         }
        
