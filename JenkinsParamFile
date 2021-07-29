@@ -41,6 +41,28 @@ agent { label 'master' }
             }
             }
         }
+        stage('parallel-run')
+       {
+
+          parallel {
+
+                  stage('unix')
+                  {  
+                        steps {
+
+                                  echo "Running on Unix"
+                              }
+                  }
+                 stage('windows')
+                 {
+
+                       steps {
+
+                             echo "Running On Wondows"
+                           }
+                 }
+            }
+       }
        
         }
 }
