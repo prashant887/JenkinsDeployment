@@ -5,8 +5,9 @@ pipeline {
     }
     stages {
         stage('Sample') {
+        steps {
         sh '/Users/pl465j/Documents/create_hourely_file.sh'
-
+         }
         }
     }
 }
