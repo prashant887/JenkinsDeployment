@@ -5,10 +5,7 @@ pipeline {
     }
     stages {
         stage('Sample') {
-            steps {
-                echo 'Hello World'
-            }
-                            sh '/Users/pl465j/Documents/create_hourely_file.sh'
+        sh '/Users/pl465j/Documents/create_hourely_file.sh'
 
         }
     }
