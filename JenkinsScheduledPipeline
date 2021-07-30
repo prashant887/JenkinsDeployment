@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    triggers {
+        cron('H 0 * * * *')
+    }
+    stages {
+        stage('Sample') {
+            steps {
+                echo 'Hello World'
+                sh ../create_hourely_file.sh
+            }
+        }
+    }
+}
