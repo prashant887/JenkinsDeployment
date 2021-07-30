@@ -48,6 +48,10 @@ agent { label 'master' }
 
                   stage('unix')
                   {  
+                       agent {
+
+                               label 'master'
+                        }
                         steps {
 
                                   echo "Running on Unix"
